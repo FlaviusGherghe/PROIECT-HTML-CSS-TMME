@@ -1,0 +1,175 @@
+*{
+	box-sizing: border-box;
+	margin: 0;
+padding: 0;
+background-color: #f8f7f2;
+}
+.container{
+	width: 100vw;
+	height: 100vh;
+	box-shadow: 2px 2px 12px rgba(0, 0, 0, .05);
+
+}
+
+nav {
+height: 80px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+text-transform: uppercase;
+font-weight:700;
+letter-spacing: 2px;
+position: relative;
+width: 100%;
+box-shadow: 2px 2px 12px rgba(0, 0, 0, .05);
+z-index: 1;
+top: 0px;
+}
+
+
+.logo{
+	cursor: pointer;
+	padding-left: 10px;
+}
+
+.tot {
+display: flex;
+
+}
+
+nav ul{
+	list-style: none;
+	
+}
+nav ul li{
+	display: inline-block;
+	line-height: 80px;
+	margin: 0 5px;
+	}
+
+nav ul li  a{
+font-weight:bold;
+font-size: 17px;
+border-radius: 3px;
+color: #fb3640;
+text-decoration: none;
+}
+
+nav a.active,a:hover{
+	background:#22577a ;
+	transition: .5s;
+}
+
+.sidenav {
+	height: 100%;
+	width: 103px;
+	margin: 10px;
+	z-index: 1;
+	top: 81.5px;
+	left: 0;
+	overflow-x: hidden;
+	font-weight:700;
+	border-right: solid 3px rgba(0, 0, 0, .05);
+  }
+  
+  .sidenav li{
+	list-style: none;
+  }
+  .sidenav a {
+	padding: 10px;
+	text-decoration: none;
+	color: #fb3640;
+	display: block;
+	font-weight:bold;
+	font-size: 17px;
+	border-radius: 3px;
+	
+  }
+  
+  .sidenav a:hover {
+	background: #22577a;
+	transition: .5s;
+  }
+
+  .sidenav a.active{
+	background: #f8f7f2;
+	font-size: 20px;
+  }
+
+  .Grafica{
+    display: flex;
+    background-color : none;    
+
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    transition: 2s all ease;
+    
+}
+
+.tot{
+  display: flex;
+}
+  
+  .sortbutoane, .Quiz
+  {
+      color: #fb3640;
+      border: solid 1px;
+      border-color: #fb3640;
+      font-size: 15px;
+      cursor: pointer;
+  }
+
+
+.reset 
+{
+    color: #fb3640;
+    font-size: 15px;
+    border-color: #fb3640;
+    border: solid 1px;
+  
+    cursor: pointer;
+}
+
+
+.flex-item{
+    background : cyan;
+    border: 1pt solid black;
+    width: 20px;
+    transition: 0.1s all ease;
+ 
+}
+
+
+#newArray
+{
+    color: #fb3640;
+    border: solid 1px ;
+    font-size: 15px;
+    cursor: pointer;
+}
+#newArray:hover:enabled
+{
+    background-color: #22577a;
+}
+
+#setari
+{
+    width: 95%;
+    color: #fb3640;
+    margin-left: 206px;
+    padding: 10px;
+    margin-top: 10px;
+  
+   
+}
+
+#input
+{
+display: block;
+    color: #fb3640;
+    
+}
+
+
+

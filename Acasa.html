@@ -1,0 +1,97 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Acasa</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/acasa.css">
+</head>
+<body>
+	<div class="container">
+<nav>
+<div class="logo"><img src="poze/AlgoritmRO.png" alt="" width="75" height="75" class="logo" id="meniu"></div>
+<div class="meniu">
+	<ul><li><a class="active" href="Acasa.html">Acasa</a></li>
+		<li><a href="Implementare.html">Implementare</a></li>
+		<li><a href="Exemple.html">Exemple</a></li>
+		<li><a href="Aplicatii.html">Aplicatii</a></li>
+		<li><a href="Javascript Implementare.html">Javascript </a></li>
+		<li><a href="Grafica.html">Grafica</a></li></div>
+<div class="fakeclass"><p></p></div>
+</nav>
+
+
+<tot>
+	<div class="tot">
+		<scurtaturi class="sidenav">
+			<ul><li><a href="#despre">Despre</a></li>
+				<li><a href="#avantaje">Avantaje</a></li>
+				<li><a href="#dezavantaje">Dezavantaje</a></li>
+				<li><a href="#algoritm">Algoritm</a></li>
+				<li><a href="#animatie">Animatie</a></li></ul>
+				<li><a href="#meniu">Meniu</a></li>
+		</scurtaturi>
+<continut class="cuprins" >
+	<h1 id="despre">Quicksort</h1>
+	<h2>Despre</h2>
+	<p>Este un algoritm de sortare care, pentru un sir de n elemente, are un timp de executie in cazul cel mai defavorabil O(n2), a fost Dezvoltat de informaticianul britanic Tony Hoare in 1959 si publicat in 1961  si cand este implementat bine, poate fi ceva mai rapid decat Merge Sort  si de aproximativ doua sau trei ori mai rapid decat Heap Sort.
+	La fel ca Merge Sort, Quicksort este un algoritm de sortare bazat pe abordarea Divide and Conquer.</p>
+	<p>Functioneaza prin selectarea unui element „pivot” din matrice si partitionarea celorlalte elemente in doua sub-matrice, in functie de faptul ca acestea sunt mai mici sau mai mari decat pivotul. Din acest motiv, uneori se numeste sortare cu schimb de partitii. Sub-matricele sunt apoi sortate recursiv. Acest lucru se poate face in loc, necesitand cantitati suplimentare mici de memorie pentru a efectua sortarea.</p>
+	<p>Quicksort este o sortare de comparatie, ceea ce inseamna ca poate sorta articole de orice tip pentru care este definita o relatie „mai putin decat” (formal, o ordine totala). Implementarile eficiente ale Quicksort nu sunt o sortare stabila, ceea ce inseamna ca ordinea relativa a elementelor de sortare egala nu este pastrata.
+	Analiza matematica a sortarii rapide arata ca, in medie, algoritmul ia O ( n log ⁡ n ) O(n\log {n}) comparatii pentru a sorta n articole. In cel mai rau caz, face O ( n 2 ) O(n^{2}) comparatii. </p>
+	<h2 id="avantaje">Avantaje:</h2>
+	<ol>
+	<li>Sorteaza pe loc, deoarece foloseste doar o mica stiva auxiliara.</li>
+	<li>Este nevoie doar de n (log n) timp pentru a sorta n articole.</li>
+	<li>Are o bucla interioara extrem de scurta.</li>
+	<li>Acest algoritm a fost supus unei analize matematice amanuntite, se poate face o afirmatie foarte precisa despre problemele de performanta.</li>
+	</ol>
+	<h2 id="dezavantaje">Dezavantaje:</h2>
+	<ol>
+	<p><li>Este recursiv. Mai ales, daca recursiunea nu este disponibila, implementarea este extrem de complicata.</li>
+	<li>Este nevoie de timp patratic (adica, n2) in cel mai rau caz.</li>
+	<li>Este fragil, adica o simpla greseala in implementare poate trece neobservata si poate duce la functionarea proasta.</li></p>
+	</ol>
+	<Tabel class="tabel">
+	<table>
+	<tr>
+	<th><h3 id="algoritm">Algoritm quicksort</h3></th>
+	<th><h3>Partitionarea sirului</h3></th>
+	</tr>
+	<tr>
+	<td><p><ul>quicksort(a, inf, sup)
+		<ol><li>daca inf < sup atunci</li>
+		<li> q <- partitie(a, inf, sup)</li>
+		<li>quicksort(a, inf, q)</li>
+		<li>quicksort(a, q + 1, sup)</li></ol>
+		sfarsit daca</ul></p></td>
+		
+			<td><p><ul>partitie(a, inf, sup)
+				<ol><li>x <- a[inf]</li>
+				<li>i <- inf – 1</li>
+				<li>j <- sup + 1</li>
+				<li>cât timp adevărat execută</li>
+				<li>executa</li>
+				<li>j <- j – 1</li>
+				<li>cat timp a[j] > x</li>
+				<li>executa</li>
+				<li>i <- i + 1</li>
+				<li>cat timp a[i] < x</li>
+				<li>daca i < j atunci</li>
+				<li>interschimba a[i] <-> a[j]</li>
+				<li>altfel</li>
+				<li>returneaza j</li></ol>
+				sfarsit daca
+			    sfarsit cat timp</ul></p></td></tr>
+			</table>
+		</Tabel>
+		<img src="poze/quicksort.gif" alt="" class="gif" height="150px" width="500px" id="animatie"></a>
+		<img src="poze/algorithm.png" alt="" height="600" width="600" class="image">
+</continut>
+
+</div>
+</tot>
+</div>
+</body>
+</html>

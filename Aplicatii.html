@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Aplicatii</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/aplicatii.css">
+</head>
+<body>
+	<div class="container">
+		<nav>
+			<div class="logo"><img src="poze/AlgoritmRO.png" alt="" width="75" height="75" class="logo" id="meniu"></div>
+			<div class="meniu">
+				<ul><li><a class="active" href="Acasa.html">Acasa</a></li>
+					<li><a href="Implementare.html">Implementare</a></li>
+					<li><a href="Exemple.html">Exemple</a></li>
+					<li><a href="Aplicatii.html">Aplicatii</a></li>
+					<li><a href="Javascript Implementare.html">Javascript </a></li>
+					<li><a href="Grafica.html">Grafica</a></li></div>
+			<div class="fakeclass"><p></p></div>
+			
+			</nav>
+<div class="tot">
+<scurtaturi class="sidenav">
+	<ul><li><a href="#video">Video</a></li>
+		<li><a href="#ap4">Aplicatia4</a></li>
+		<li><a href="#ap3">Aplicatia3</a></li>
+		<li><a href="#ap2">Aplicatia2</a></li>
+		<li><a href="#ap1">Aplicatia1</a></li>
+		</ul>
+	
+</scurtaturi>
+
+<aplicatii class="aplicatii"><h1>Aplicatii</h1>
+	<h2 id="ap1">Aplicatia1</h2>
+	<p>Avand in vedere o matrice binara, sortati-o in timp liniar si spatiu constant. Iesirea ar trebui sa imprime toate zerourile, urmate de toti unu.</p>
+	<p>De exemplu:
+	Intrare: { 1, 0, 1, 0, 1, 0, 0, 1 }
+	Iesire: { 0, 0, 0, 0, 1, 1, 1, 1 }</p>
+	<p>Ideea este sa folositi 1 ca element pivot si sa faceti o trecere a procesului de partitie. Matricea rezultata va fi sortata.</p>
+
+	<h2 id="ap2">Aplicatia2</h2>
+	<p>Avand in vedere o serie de numere intregi pozitive si negative, segregati-le in timp liniar si spatiu constant. Iesirea ar trebui sa imprime toate numerele negative, urmate de toate numerele pozitive.</p>
+	<p>De exemplu:
+	Intrare: [9, -3, 5, -2, -8, -6, 1, 3]
+	Iesire: [-3, -2, -8, -6, 5, 9, 1, 3 ]</p>
+	<p>Ideea este sa folositi 0 ca element pivot si sa faceti o trecere a procesului de partitie. Matricea rezultata va satisface constrangerile date.</p>
+	
+	<h2 id="ap3">Aplicatia3</h2>
+	<p>Avand in vedere un tablou intreg, rearanjati-l astfel incat sa contina numere pozitive si negative in pozitii alternative. Daca matricea contine mai multe elemente pozitive sau negative, mutati-le la sfarsitul matricei.</p>
+	<p>De exemplu:
+	Intrare: { 9, -3, 5, -2, -8, -6, 1, 3 }
+	Iesire: { 5, -2, 9, -6, 1, -8, 3, -3 }</p>
+		<p>Ideea este sa folositi 0 ca element pivot si sa faceti o trecere a procesului de partitie. Matricea rezultata va contine toate numerele intregi pozitive pana la sfarsitul matricei si toate numerele intregi negative la inceput.
+		Apoi schimbati elementele negative alternative de la urmatorul element pozitiv disponibil pana cand se ajunge la sfarsitul matricei sau toate numerele intregi negative sau pozitive sunt epuizate.</p>
+
+		<h2 id="ap4">Aplicatia4</h2>
+	<p>Având în vedere un tablou întreg, mutați toate zerourile prezente în ea până la sfârșit. Soluția ar trebui să mențină ordinea relativă a elementelor din matrice.</p>
+	<p>De exemplu:
+	Intrare: { 6, 0, 8, 2, 3, 0, 4, 0, 1 }
+	Ieșire: { 6, 8, 2, 3, 4, 1, 0, 0, 0 }</p>
+	<p>Ideea este sa folositi 0 ca element pivot si sa faceti o trecere a procesului de partitie. Logica de partitionare va citi toate elementele si de fiecare data cand intalnim un element non-pivot, il schimbam cu prima aparitie a pivotului.</p>
+	<h2>Aplicatia1 rezolvare</h3>
+	<video width="320" height="160" style="padding: 10px;" controls id="video">
+		<source src="continut audio video/rezolvare.mp4" type="video/mp4"> </video>
+	</div>
+</aplicatii>
